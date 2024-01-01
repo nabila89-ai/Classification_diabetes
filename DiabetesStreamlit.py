@@ -11,6 +11,7 @@ st.title("Data Mining Prediksi Diabetes dengan Algoritma Decesion Tree")
 Age = st.text_input('Input nilai Age')
 Gender = st.text_input('Input nilai Gender')
 BMI = st.text_input('Input nilai BMI')
+BloodPressure = st.text_input('Input nilai BloodPressure')
 HbA1c = st.text_input('Input nilai HbA1c')
 FamilyHistoryofDiabetes = st.text_input('Input nilai FamilyHistoryofDiabetes')
 Smoking = st.text_input('Input nilai Smoking')
@@ -23,7 +24,7 @@ diagnosis = ''
 print(diagnosis)
 #membuat tombol prediksi
 if st.button('Tes Prediksi Diabetes') :
-    prediction = diabetes_model.predict([[Age,Gender,BMI,HbA1c,FamilyHistoryofDiabetes,
+    prediction = diabetes_model.predict([[Age,Gender,BMI,BloodPressures,HbA1c,FamilyHistoryofDiabetes,
                                           Smoking,Diet,Exercise,Diagnosis]])
 
     if(prediction[0] == 1) :
