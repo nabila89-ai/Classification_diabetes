@@ -158,6 +158,7 @@ plt.title('Distribusi BMI')
 <img src="image5.png"/>
 Koordinat(0.5 , 1.0) menunjukkan posisi horizontal(x) dan vertikal(y) dari tengah bagian atas subplot.
 
+
 Lakukan Preprocessing untuk mengubah data yang ada dan mempersiapkan data mentah agar dapat digunakan oleh model pembelajaran mesin atau untuk analisis data lebih lanjut.
 
 Menentukan transformasi umur : 
