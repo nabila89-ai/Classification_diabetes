@@ -30,7 +30,8 @@ Dataset yang digunakan untuk menyelesaikan permasalahan yang sudah dijabarkan ya
 - Olahraga: Apakah pasien berolahraga secara teratur.
 - Diagnosis: Diagnosis pasien, baik diabetes atau tidak diabetes. 
 ## Data Preparation
-Untuk data preparation ini saya melakukan EDA (Exploratory Data Analysis) terlebih dahulu, lalu melakukan proses Standarisasi data dengan mentransform data agar model yang dihasilkan memiliki tingkat akurasi yang tinggi.
+### Data Colection
+Data ini adalah informasi medis yang mencakup riwayat penyakit,faktor risiko,dan gejala pasien. Data ini berperan penting dalam upaya diagnosis dini dan pemahaman faktor-faktor yang berkontribusi terhadap penyakit diabetes.
 Berikut langkah-langkah untuk data preparation,dimulai dari mendownload dataset dari kaggle 
 
 ```javascript
@@ -58,7 +59,6 @@ Membuat dan mengekstrak isi dari file ZIP ke dalamnya,proses ini mempersiapkan d
 !ls easiest-diabetes-classification-dataset
 ```
 
-# Library yang digunakan
 Library yang digunakan untuk setiap analisis data dan pembuatan EDA sebagai berikut :
 
 ```javascript
@@ -74,7 +74,6 @@ from sklearn import tree
 import pickle
 ```
 
-# Data Discovery
 Tujuan data discovery untuk membantu pemmahaman lebih dalam tentang data dan menghasilkan pengambilan keputusan.
 
 Kode ini berfungsi untuk membaca data file dari file CSV "Diabetes Classification.csv" dan menyimpannya dalam bentuk data frame.
@@ -112,8 +111,6 @@ Menghitung jumlah kemunculan setiap nilai unik dalam kolom'Diagnosis'dalam data 
 ```javascript
 df['Diagnosis'].value_counts()
 ```
-
-## EDA (Exploratory Data Analysis)
 
 ```javascript
 sns.set_style(style='darkgrid')
@@ -161,8 +158,7 @@ plt.title('Distribusi BMI')
 <img src="image5.png"/>
 Koordinat(0.5 , 1.0) menunjukkan posisi horizontal(x) dan vertikal(y) dari tengah bagian atas subplot.
 
-## Preprocessing
-Mempersiapkan data mentah agar dapat digunakan oleh model pembelajaran mesin atau untuk analisis data lebih lanjut.
+Lakukan Preprocessing untuk mengubah data yang ada dan mempersiapkan data mentah agar dapat digunakan oleh model pembelajaran mesin atau untuk analisis data lebih lanjut.
 
 Menentukan transformasi umur : 
 - Anak-anak (0-12 tahun)
