@@ -309,3 +309,6 @@ Tahap terakhir,simpan model Decision Tree ke dalam file pickle  dengan nama'Clas
 filename ='Classification Diabetes.sav'
 pickle.dump(model, open(filename, 'wb'))
 ```
+## Deployment
+[DiabetesAPP](https://classificationdiabetes-zgachprwjb4prmbasx35rk.streamlit.app/)
+<img src="image7.png"/>
